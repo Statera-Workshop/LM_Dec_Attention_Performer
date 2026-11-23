@@ -1,0 +1,83 @@
+{
+ "model": "performer",
+ "repo": "(new) lucidrains/performer-pytorch",
+ "target_repo": "LM_Dec_Attention_Performer",
+ "category": "Attention",
+ "upstream": "lucidrains/performer-pytorch (MIT)",
+ "unified": [
+  "causal FAVOR+ linear attention with rotary positions"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "scaling",
+ "started": "2026-11-16 13:24:34",
+ "smoke": false,
+ "rows": [
+  {
+   "len": 512,
+   "train": {
+    "peak_mb": 1048.6,
+    "ms": 1219.0,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 54.7,
+    "ms": 353.7,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 1024,
+   "train": {
+    "peak_mb": 2001.2,
+    "ms": 1227.9,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 76.8,
+    "ms": 367.0,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 2048,
+   "train": {
+    "peak_mb": 3955.1,
+    "ms": 1236.8,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 122.1,
+    "ms": 353.4,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 4096,
+   "train": {
+    "peak_mb": 7896.3,
+    "ms": 5458.6,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 215.0,
+    "ms": 358.6,
+    "dtype": "bf16"
+   }
+  },
+  {
+   "len": 8192,
+   "train": {
+    "peak_mb": 15988.8,
+    "ms": 33043.8,
+    "dtype": "bf16"
+   },
+   "infer": {
+    "peak_mb": 394.6,
+    "ms": 524.2,
+    "dtype": "bf16"
+   }
+  }
+ ],
+ "seconds": 155.3
+}

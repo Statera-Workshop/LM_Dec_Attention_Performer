@@ -1,0 +1,24 @@
+{
+ "model": "performer",
+ "repo": "(new) lucidrains/performer-pytorch",
+ "target_repo": "LM_Dec_Attention_Performer",
+ "category": "Attention",
+ "upstream": "lucidrains/performer-pytorch (MIT)",
+ "unified": [
+  "causal FAVOR+ linear attention with rotary positions"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "overfit",
+ "started": "2026-11-16 13:31:34",
+ "smoke": false,
+ "first_ce": 5.813267230987549,
+ "last_ce": 0.001417357474565506,
+ "passed": true,
+ "pass_loss": 0.5,
+ "steps": 400,
+ "seconds": 496.9,
+ "lr": 0.001,
+ "note": "overfit uses Adam 1e-3 on 4 x 256 bytes; only an implementation check",
+ "bf16": true
+}

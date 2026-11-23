@@ -4,8 +4,8 @@ Performer - Attention family, decoder-only byte-level language model, standardis
 
 ## Status
 
-- Verification level: **Reviewed**
-- Failure class: Experiment Incomplete: not run yet
+- Verification level: **Runnable**
+- Failure class: Architecture Unsuitable: not a causal language model (later tokens change earlier outputs, leak 6.3e-03)
 
 ## Provenance
 
@@ -20,7 +20,11 @@ All models share one protocol: 256-byte vocabulary, dim 512, 6 layers, 8 heads x
 
 ## Results
 
-- No results yet.
+- Parameters: 19.17 M
+- Causality check: FAIL (largest change of earlier outputs 6.3e-03)
+- Overfit check (4 x 256 bytes): 5.813 -> 0.001 nats, pass
+- Peak GPU memory at length 2048 (batch 1): train 3955 MB, inference 122 MB
+- Peak GPU memory at length 8192 (batch 1): train 15989 MB, inference 395 MB
 
 ## Tests
 
